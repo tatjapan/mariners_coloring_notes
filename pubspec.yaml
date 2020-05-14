@@ -31,6 +31,7 @@ dependencies:
   animated_floatactionbuttons: ^0.1.0
   font_awesome_flutter: ^8.8.1
   path_provider: ^1.6.7
+  url_launcher: ^5.4.7
   intl: ^0.16.1
   flutter_colorpicker: ^0.3.4
   flutter_localizations:
@@ -45,6 +46,7 @@ dev_dependencies:
   animated_floatactionbuttons: ^0.1.0
   font_awesome_flutter: ^8.8.1
   path_provider: ^1.6.7
+  url_launcher: ^5.4.7
   intl: ^0.16.1
   flutter_colorpicker: ^0.3.4
   flutter_localizations:
@@ -68,6 +70,8 @@ flutter:
       - assets/images/moose.png
       - assets/images/logo_1.png
       - assets/images/logo_2.png
+      - assets/images/htp_1.gif
+      - assets/images/htp_2.gif
       - lang/en.json
       - lang/ja.json
       - lang/es.json

@@ -1,7 +1,18 @@
 {
   "app_title": "Nota de coloración de los Marineros",
   "Kyle Seager": "Kyle Seager",
-  "Mariners Moose": "Moose de los Marineros",
+  "Mariner Moose": "Moose de los Marineros",
   "Mariners Logo 1": "Logotipo de los Marineros 1",
-  "Mariners Logo 2": "Logotipo de los Marineros 2"
+  "Mariners Logo 2": "Logotipo de los Marineros 2",
+  "back": "Atrás",
+  "Select header": "Elija una imagen que quiera pintar.",
+  "HTP_title1": "Elija una imagen que quiera pintar.",
+  "Can I play this app for free?": "¿Puedo jugar a esta aplicación gratis?",
+  "Yes! This app is free to play!": "Sí. Esta aplicación es gratuita.",
+  "Can I use my coloring book for commercial purposes?": "¿Puedo usar mi libro de colorear con fines comerciales?",
+  "Coloring images are only allowed for personal use in the home.Please refrain from using them for commercial use or for outdoor postings.": "Los libros para colorear sólo se permiten para uso personal en el hogar.\nPor favor, absténgase de usar el sitio para uso comercial o para publicaciones al aire libre.",
+  "Can I save my finished coloring book?": "¿Puedo guardar mi libro de colorear terminado?",
+  "No, unfortunately you can not save it.The save function is currently under development.": "No, desafortunadamente no puedes guardarlo.\nLa función de guardar está actualmente en desarrollo.",
+  "I found a bug and would like to report it.": "Encontré un micrófono y me gustaría reportarlo.",
+  "Please send a message to facebook.com/tatsuya.tsuri. If you're an engineer, you can create an Issue on Github.": "Por favor, envíe un mensaje a www.facebook.com/tatsuya.tsuri.\n Si eres ingeniero, crea un número en Github."
 }

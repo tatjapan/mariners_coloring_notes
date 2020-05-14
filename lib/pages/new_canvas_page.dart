@@ -1,7 +1,3 @@
-import 'dart:io';
-import 'dart:ui' as ui;
-import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -13,8 +9,6 @@ import 'package:mariners_coloring_notes/model/touch_points.dart';
 import 'package:mariners_coloring_notes/values/values.dart';
 import 'package:mariners_coloring_notes/widgets/canvas_painter.dart';
 import 'package:mariners_coloring_notes/widgets/common_widget/bottom_footer.dart';
-
-import 'package:path_provider/path_provider.dart';
 
 class NewCanvasPage extends StatefulWidget {
   NewCanvasPage({Key key, @required this.coloringImage}) : super(key: key);
@@ -34,29 +28,6 @@ class _NewCanvasPageState extends State<NewCanvasPage> {
   double strokeWidth = 5.0;
   Color selectedColor = Colors.cyan;
   Color pickerColor = Colors.cyan;
-  Image _image2;
-
-  Future<void> _takeScreenShot() async {
-    RenderRepaintBoundary boundary =
-        previewContainer.currentContext.findRenderObject();
-//    double pixelRatio = originalSize / MediaQuery.of(context).size.width;
-    ui.Image image = await boundary.toImage(pixelRatio: 2.0);
-    final directory = (await getApplicationDocumentsDirectory()).path;
-    print(directory);
-    ByteData byteData = await image.toByteData(format: ui.ImageByteFormat.png);
-    Uint8List pngBytes = byteData.buffer.asUint8List();
-    setState(() {
-      _image2 = Image.memory(pngBytes.buffer.asUint8List());
-    });
-    print(pngBytes.length);
-    File imgFile = new File('$directory/screenshot.png');
-    try {
-      imgFile.writeAsBytes(pngBytes);
-      print('Success!');
-    } catch (e) {
-      print(e);
-    }
-  }
 
   Future<void> _pickStroke() async {
     //Shows AlertDialog
@@ -123,15 +94,12 @@ class _NewCanvasPageState extends State<NewCanvasPage> {
 
   List<Widget> fabOption() {
     return <Widget>[
-      FloatingActionButton(
-        heroTag: "save",
-        child: Icon(Icons.save),
-        tooltip: 'Save',
-        onPressed: () {
-          FocusScope.of(context).requestFocus(FocusNode());
-          _takeScreenShot();
-        },
-      ),
+//      FloatingActionButton(
+//        heroTag: "save",
+//        child: Icon(Icons.save),
+//        tooltip: 'Save',
+//        onPressed: () {},
+//      ),
       FloatingActionButton(
         heroTag: "paint_stroke",
         child: Icon(Icons.brush),
@@ -147,6 +115,7 @@ class _NewCanvasPageState extends State<NewCanvasPage> {
         tooltip: 'Eraser',
         onPressed: () {
           selectedColor = Color.fromARGB(250, 250, 250, 250);
+//          selectedColor = Colors.white;
         },
       ),
       FloatingActionButton(

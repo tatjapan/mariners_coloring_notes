@@ -14,7 +14,7 @@ final List<ColoringImage> coloringImageList = [
     imageAssetPath: "assets/images/seager.png",
   ),
   ColoringImage(
-    imageName: "Mariners Moose",
+    imageName: "Mariner Moose",
     imageAssetPath: "assets/images/moose.png",
   ),
   ColoringImage(
