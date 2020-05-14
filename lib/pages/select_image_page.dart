@@ -58,13 +58,15 @@ class SelectImagePage extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return TermsPage();
-                    },
-                  ),
-                );
+                launch(
+                    'https://docs.google.com/document/d/14VIiTGPOiyp-vdA407599zlkZk3wCFu_gYA7mKx_u34/edit?usp=sharing');
+//                Navigator.of(context).push(
+//                  MaterialPageRoute(
+//                    builder: (context) {
+//                      return TermsPage();
+//                    },
+//                  ),
+//                );
               },
               leading: FaIcon(FontAwesomeIcons.balanceScale),
               title: Text(
@@ -76,13 +78,15 @@ class SelectImagePage extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return PrivacyPolicyPage();
-                    },
-                  ),
-                );
+                launch(
+                    'https://docs.google.com/document/d/1aKfFi1whSnYSNsM7MlCQEfMFRw2eIQCAsRmwp4uf30s/edit?usp=sharing');
+//                Navigator.of(context).push(
+//                  MaterialPageRoute(
+//                    builder: (context) {
+//                      return PrivacyPolicyPage();
+//                    },
+//                  ),
+//                );
               },
               leading: FaIcon(FontAwesomeIcons.userShield),
               title: Text(
