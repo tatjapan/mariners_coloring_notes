@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:mariners_coloring_notes/model/coloring_image.dart';
 import 'package:mariners_coloring_notes/pages/faq_page.dart';
-import 'package:mariners_coloring_notes/pages/privacy_policy_page.dart';
-import 'package:mariners_coloring_notes/pages/terms_page.dart';
 import 'package:mariners_coloring_notes/services/app_localizations.dart';
 import 'package:mariners_coloring_notes/values/colors.dart';
 import 'package:mariners_coloring_notes/widgets/common_widget/bottom_footer.dart';
@@ -26,13 +24,26 @@ class SelectImagePage extends StatelessWidget {
           children: <Widget>[
             DrawerHeader(
               padding: EdgeInsets.only(top: 30.0),
-              child: Text(
-                AppLocalizations.of(context).translate('app_title'),
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 20.0,
-                  color: Colors.white,
-                ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset(
+                    'assets/images/LOGO_1024x1024.png',
+                    fit: BoxFit.contain,
+                    height: 32.0,
+                  ),
+                  Container(
+                    padding: EdgeInsets.all(8.0),
+                    child: Text(
+                      AppLocalizations.of(context).translate('app_title'),
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ],
               ),
               decoration: BoxDecoration(
                 color: AppColors.secondaryElement,

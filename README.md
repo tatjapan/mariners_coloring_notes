@@ -1,6 +1,7 @@
-# mariners_coloring_notes
+# Mariners Coloring Notes
 
-A new Flutter project.
+Seattle Mariners coloring book app developed with Flutter for Web.
+
 
 ## Getting Started
 

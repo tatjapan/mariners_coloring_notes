@@ -19,8 +19,21 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       centerTitle: true,
-      title: Text(
-        AppLocalizations.of(context).translate('app_title'),
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Image.asset(
+            'assets/images/LOGO_1024x1024.png',
+            fit: BoxFit.contain,
+            height: 32.0,
+          ),
+          Container(
+            padding: EdgeInsets.all(8.0),
+            child: Text(
+              AppLocalizations.of(context).translate('app_title'),
+            ),
+          )
+        ],
       ),
 //      actions: <Widget>[
 //        IconButton(
