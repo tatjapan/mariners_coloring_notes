@@ -2,16 +2,17 @@
 
 Seattle Mariners coloring book app developed with Flutter for Web.
 
+## How To Play
+#### 1. Choose your favorite coloring image.
+![screen_shot_1](assets\images\htp_1.gif)
 
-## Getting Started
+#### 2. The toggle button at the bottom right of the screen allows you to change the size of the stroke and the color of the pen.
+![screen_shot_2](assets\images\htp_2.gif)
 
-This project is a starting point for a Flutter application.
+## ToDo
+- [ ] Implementing the Redo or Undo feature
+- [ ] Implementation of saving the finished coloring book
+- [ ] Create a Terms of Use and Privacy Policy page
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Notes
+The use of coloring books is limited to private use in the home. Please refrain from using coloring books for commercial purposes.

@@ -14,7 +14,9 @@ class GridTitleText extends StatelessWidget {
       child: Text(
         AppLocalizations.of(context).translate(text),
         style: TextStyle(
-          fontSize: 25.0,
+          fontWeight: FontWeight.w700,
+          fontSize: 24.0,
+          fontStyle: FontStyle.italic,
         ),
       ),
     );

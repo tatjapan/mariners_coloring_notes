@@ -38,7 +38,9 @@ class SelectImagePage extends StatelessWidget {
                       AppLocalizations.of(context).translate('app_title'),
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 20.0,
+                        fontWeight: FontWeight.w700,
+                        fontSize: 18.0,
+                        fontStyle: FontStyle.italic,
                         color: Colors.white,
                       ),
                     ),
@@ -112,7 +114,7 @@ class SelectImagePage extends StatelessWidget {
             ),
             Divider(
               thickness: 2.0,
-              color: Colors.black45,
+              color: AppColors.primaryTextColor,
             ),
             Container(
               padding: EdgeInsets.only(
@@ -123,7 +125,7 @@ class SelectImagePage extends StatelessWidget {
               child: Text(
                 'Follow me on',
                 style: TextStyle(
-                  color: Colors.black,
+                  color: AppColors.primaryTextColor,
                   fontSize: 15.0,
                 ),
               ),
@@ -142,7 +144,8 @@ class SelectImagePage extends StatelessWidget {
                 ),
                 InkWell(
                   child: FaIcon(FontAwesomeIcons.github),
-                  onTap: () => launch('https://github.com/tatjapan'),
+                  onTap: () => launch(
+                      'https://github.com/tatjapan/mariners_coloring_notes'),
                 ),
               ],
             )

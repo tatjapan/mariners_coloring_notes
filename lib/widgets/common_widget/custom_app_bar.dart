@@ -31,6 +31,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             padding: EdgeInsets.all(8.0),
             child: Text(
               AppLocalizations.of(context).translate('app_title'),
+              style: TextStyle(
+                fontWeight: FontWeight.w700,
+                fontSize: 24.0,
+                fontStyle: FontStyle.italic,
+              ),
             ),
           )
         ],
